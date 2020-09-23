@@ -1,6 +1,14 @@
 {
   "name": "@simple-monorepo/common",
   "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT"
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.0.3"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "watch": "tsc -p tsconfig.json -w"
+  }
 }
