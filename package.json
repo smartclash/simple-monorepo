@@ -5,6 +5,8 @@
   ],
   "scripts": {
     "postinstall": "yarn workspaces run build",
-    "start-server": "yarn workspace @simple-monorepo/server run restarter"
+    "start-server": "yarn workspace @simple-monorepo/server run restarter",
+    "watch-server": "yarn workspace @simple-monorepo/server run watch",
+    "watch-common": "yarn workspace @simple-monorepo/common run watch"
   }
 }
