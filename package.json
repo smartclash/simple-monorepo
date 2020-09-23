@@ -2,5 +2,9 @@
   "private": true,
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "scripts": {
+    "postinstall": "yarn workspaces run build",
+    "start-server": "yarn workspace @simple-monorepo/server run restarter"
+  }
 }
